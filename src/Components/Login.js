@@ -15,7 +15,7 @@ const Login = () => {
           alt="netflix-icon"
         />
       </div>
-      <form className="p-9 w-3/12 absolute bg-black my-36 mx-auto right-0 left-0">
+      <form className="p-12 w-3/12 absolute bg-black my-36 mx-auto right-0 left-0 h-3/6 opacity-90">
         <p className="text-white font-bold mx-3 text-xl">
           {isSigin ? "Sig In" : "Sing Up"}
         </p>
@@ -23,25 +23,29 @@ const Login = () => {
           <input
             type="text"
             placeholder="Enter Your Fullname "
-            className="m-2 p-2 w-full"
+            className="m-2 p-2 w-full mt-4 bg-slate-700"
           />
         )}
         <input
           type="text"
           placeholder="Email address"
-          className="m-2 p-2 w-full"
+          className="m-2 p-2 w-full mt-4 bg-slate-700 "
         />
         <input
           type="password"
           placeholder="enter password"
-          className="m-2 p-2 w-full"
+          className="m-2 p-2 w-full mt-4 bg-slate-700 "
         />
-        <button className="p-3 m-3 bg-red-600 w-full">
-          {" "}
+        <button className="p-3 m-3 bg-red-600 w-full mt-4 font-bold">
           {isSigin ? "Sig In" : "Sing Up"}
         </button>
-        <p className="text-white mx-3 cursor-pointer" onClick={changeform}>
-          New To Netflix? <span className="font-bold">Signup</span>
+        <p
+          className="text-white mx-3 cursor-pointer font-medium"
+          onClick={changeform}
+        >
+          {isSigin
+            ? "New To Netflix? Sign Up"
+            : "Already created Account Sign In"}
         </p>
       </form>
     </div>
