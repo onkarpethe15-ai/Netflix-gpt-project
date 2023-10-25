@@ -1,5 +1,7 @@
 created react app
 configured tailwind css
+built header
+login form
 
 #features ------------------------------------------------
 login/signup page
