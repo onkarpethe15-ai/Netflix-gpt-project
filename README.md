@@ -2,6 +2,10 @@ created react app
 configured tailwind css
 built header
 login form
+form validation
+firebase setup
+deploying app to production
+create signup user account
 
 #features ------------------------------------------------
 login/signup page
